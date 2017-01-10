@@ -12,6 +12,8 @@ class UIMainTableVC: UITableViewController {
 
     let dataList = ["Button"]
     
+    let UISB = UIStoryboard.init(name: "UI", bundle: Bundle.main)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,12 +58,15 @@ class UIMainTableVC: UITableViewController {
  
     //MARK: - table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        switch indexPath.row {
-//        case 0:
-//            
-//        default:
-//            break
-//        }
+        switch indexPath.row {
+        case 0:
+            let buttonVC = UISB.instantiateViewController(withIdentifier: "ButtonViewController")
+            buttonVC.hidesBottomBarWhenPushed = true
+            buttonVC.navigationItem.title = dataList[indexPath.row]
+            self.navigationController?.pushViewController(buttonVC, animated: true)
+        default:
+            break
+        }
     }
     /*
     // Override to support conditional editing of the table view.
