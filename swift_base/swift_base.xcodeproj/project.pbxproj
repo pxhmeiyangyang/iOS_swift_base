@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F123CFCA1E248D1B009315B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123CFC91E248D1B009315B3 /* AppDelegate.swift */; };
-		F123CFCC1E248D1B009315B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123CFCB1E248D1B009315B3 /* ViewController.swift */; };
 		F123CFCF1E248D1B009315B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F123CFCD1E248D1B009315B3 /* Main.storyboard */; };
 		F123CFD11E248D1B009315B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F123CFD01E248D1B009315B3 /* Assets.xcassets */; };
 		F123CFD41E248D1B009315B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F123CFD21E248D1B009315B3 /* LaunchScreen.storyboard */; };
 		F123CFDF1E248D1B009315B3 /* swift_baseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123CFDE1E248D1B009315B3 /* swift_baseTests.swift */; };
 		F123CFEA1E248D1B009315B3 /* swift_baseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123CFE91E248D1B009315B3 /* swift_baseUITests.swift */; };
+		F123CFF81E249069009315B3 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123CFF71E249069009315B3 /* MainTabBar.swift */; };
+		F123CFFA1E2490F6009315B3 /* Swift_base_define.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123CFF91E2490F6009315B3 /* Swift_base_define.swift */; };
+		F123CFFD1E2491EE009315B3 /* UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F123CFFC1E2491EE009315B3 /* UI.storyboard */; };
+		F123D0031E24929D009315B3 /* UIMainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123D0021E24929D009315B3 /* UIMainTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		F123CFC61E248D1B009315B3 /* swift_base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift_base.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F123CFC91E248D1B009315B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F123CFCB1E248D1B009315B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F123CFCE1E248D1B009315B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F123CFD01E248D1B009315B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F123CFD31E248D1B009315B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		F123CFE51E248D1B009315B3 /* swift_baseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_baseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F123CFE91E248D1B009315B3 /* swift_baseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_baseUITests.swift; sourceTree = "<group>"; };
 		F123CFEB1E248D1B009315B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F123CFF71E249069009315B3 /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		F123CFF91E2490F6009315B3 /* Swift_base_define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift_base_define.swift; sourceTree = "<group>"; };
+		F123CFFC1E2491EE009315B3 /* UI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UI.storyboard; sourceTree = "<group>"; };
+		F123D0021E24929D009315B3 /* UIMainTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMainTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,14 @@
 		F123CFC81E248D1B009315B3 /* swift_base */ = {
 			isa = PBXGroup;
 			children = (
+				F123CFFB1E2491DE009315B3 /* UI */,
 				F123CFC91E248D1B009315B3 /* AppDelegate.swift */,
-				F123CFCB1E248D1B009315B3 /* ViewController.swift */,
+				F123CFF71E249069009315B3 /* MainTabBar.swift */,
 				F123CFCD1E248D1B009315B3 /* Main.storyboard */,
 				F123CFD01E248D1B009315B3 /* Assets.xcassets */,
 				F123CFD21E248D1B009315B3 /* LaunchScreen.storyboard */,
 				F123CFD51E248D1B009315B3 /* Info.plist */,
+				F123CFF91E2490F6009315B3 /* Swift_base_define.swift */,
 			);
 			path = swift_base;
 			sourceTree = "<group>";
@@ -123,6 +131,15 @@
 				F123CFEB1E248D1B009315B3 /* Info.plist */,
 			);
 			path = swift_baseUITests;
+			sourceTree = "<group>";
+		};
+		F123CFFB1E2491DE009315B3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F123D0021E24929D009315B3 /* UIMainTableVC.swift */,
+				F123CFFC1E2491EE009315B3 /* UI.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +251,7 @@
 			files = (
 				F123CFD41E248D1B009315B3 /* LaunchScreen.storyboard in Resources */,
 				F123CFD11E248D1B009315B3 /* Assets.xcassets in Resources */,
+				F123CFFD1E2491EE009315B3 /* UI.storyboard in Resources */,
 				F123CFCF1E248D1B009315B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F123CFCC1E248D1B009315B3 /* ViewController.swift in Sources */,
+				F123CFF81E249069009315B3 /* MainTabBar.swift in Sources */,
+				F123D0031E24929D009315B3 /* UIMainTableVC.swift in Sources */,
 				F123CFCA1E248D1B009315B3 /* AppDelegate.swift in Sources */,
+				F123CFFA1E2490F6009315B3 /* Swift_base_define.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
