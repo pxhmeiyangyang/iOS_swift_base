@@ -38,6 +38,80 @@
             </objects>
             <point key="canvasLocation" x="426" y="170"/>
         </scene>
+        <!--Label View Controller-->
+        <scene sceneID="W3L-fL-2EP">
+            <objects>
+                <viewController storyboardIdentifier="LabelViewController" id="dVn-6i-GgY" customClass="LabelViewController" customModule="swift_base" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="djA-3R-980"/>
+                        <viewControllerLayoutGuide type="bottom" id="088-4S-9lI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fyK-Lq-Afc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一个文本标签" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-r9-t2f">
+                                <rect key="frame" x="117.5" y="50" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。我是多行文本。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eq-Ti-yul">
+                                <rect key="frame" x="87" y="101" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CAA-fr-kYs"/>
+                                    <constraint firstAttribute="height" constant="200" id="Emc-jx-CfE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一个被禁文本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-Sp-bk4">
+                                <rect key="frame" x="118" y="331" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一个高亮文本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivy-yi-UKD">
+                                <rect key="frame" x="117.5" y="382" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一个需要缩放的文本标签" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B9t-D9-2Yk">
+                                <rect key="frame" x="75" y="484" width="225.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一个有阴影的文本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuT-en-I32">
+                                <rect key="frame" x="101" y="433" width="173.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="B9t-D9-2Yk" firstAttribute="top" secondItem="iuT-en-I32" secondAttribute="bottom" constant="30" id="1LR-1N-ebn"/>
+                            <constraint firstItem="0eq-Ti-yul" firstAttribute="centerX" secondItem="fyK-Lq-Afc" secondAttribute="centerX" id="9qB-kQ-hU5"/>
+                            <constraint firstItem="ivy-yi-UKD" firstAttribute="centerX" secondItem="fyK-Lq-Afc" secondAttribute="centerX" id="Gb3-FY-uYg"/>
+                            <constraint firstItem="iuT-en-I32" firstAttribute="top" secondItem="ivy-yi-UKD" secondAttribute="bottom" constant="30" id="NoX-2s-A5c"/>
+                            <constraint firstItem="B9t-D9-2Yk" firstAttribute="centerX" secondItem="fyK-Lq-Afc" secondAttribute="centerX" id="OzD-09-HB1"/>
+                            <constraint firstItem="nyK-Sp-bk4" firstAttribute="top" secondItem="0eq-Ti-yul" secondAttribute="bottom" constant="30" id="Rie-tn-pAu"/>
+                            <constraint firstItem="nyK-Sp-bk4" firstAttribute="centerX" secondItem="fyK-Lq-Afc" secondAttribute="centerX" id="bCd-eB-Ivb"/>
+                            <constraint firstItem="mKA-r9-t2f" firstAttribute="top" secondItem="djA-3R-980" secondAttribute="bottom" constant="30" id="h9C-WD-yYC"/>
+                            <constraint firstItem="iuT-en-I32" firstAttribute="centerX" secondItem="fyK-Lq-Afc" secondAttribute="centerX" id="ljG-ob-8B3"/>
+                            <constraint firstItem="ivy-yi-UKD" firstAttribute="top" secondItem="nyK-Sp-bk4" secondAttribute="bottom" constant="30" id="oY9-7y-FP6"/>
+                            <constraint firstItem="mKA-r9-t2f" firstAttribute="centerX" secondItem="fyK-Lq-Afc" secondAttribute="centerX" id="qLh-My-PUl"/>
+                            <constraint firstItem="0eq-Ti-yul" firstAttribute="top" secondItem="mKA-r9-t2f" secondAttribute="bottom" constant="30" id="vfs-xY-prS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62h-hM-99p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="215"/>
+        </scene>
         <!--Button View Controller-->
         <scene sceneID="Rb4-9c-fXH">
             <objects>

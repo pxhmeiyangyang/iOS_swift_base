@@ -18,6 +18,7 @@
 		F123CFFD1E2491EE009315B3 /* UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F123CFFC1E2491EE009315B3 /* UI.storyboard */; };
 		F123D0031E24929D009315B3 /* UIMainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123D0021E24929D009315B3 /* UIMainTableVC.swift */; };
 		F123D0051E24E78F009315B3 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123D0041E24E78F009315B3 /* ButtonViewController.swift */; };
+		F123D0071E250113009315B3 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123D0061E250113009315B3 /* LabelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F123CFFC1E2491EE009315B3 /* UI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UI.storyboard; sourceTree = "<group>"; };
 		F123D0021E24929D009315B3 /* UIMainTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIMainTableVC.swift; sourceTree = "<group>"; };
 		F123D0041E24E78F009315B3 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		F123D0061E250113009315B3 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				F123D0021E24929D009315B3 /* UIMainTableVC.swift */,
 				F123CFFC1E2491EE009315B3 /* UI.storyboard */,
 				F123D0041E24E78F009315B3 /* ButtonViewController.swift */,
+				F123D0061E250113009315B3 /* LabelViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				F123CFCA1E248D1B009315B3 /* AppDelegate.swift in Sources */,
 				F123D0051E24E78F009315B3 /* ButtonViewController.swift in Sources */,
 				F123CFFA1E2490F6009315B3 /* Swift_base_define.swift in Sources */,
+				F123D0071E250113009315B3 /* LabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
