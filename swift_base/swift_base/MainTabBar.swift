@@ -17,7 +17,12 @@ class MainTabBar: UITabBarController {
         let uiSB = UIStoryboard.init(name: "UI", bundle: Bundle.main)
         let uiVC = uiSB.instantiateViewController(withIdentifier: "UIMainNavi")
         uiVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarSystemItem.more, tag: 1)
-        self.viewControllers = [uiVC]
+        
+        let baseSB = UIStoryboard.init(name: "Base", bundle: Bundle.main)
+        let baseVC = baseSB.instantiateViewController(withIdentifier: "baseMainNavi")
+        baseVC.tabBarItem = UITabBarItem.init(tabBarSystemItem: UITabBarSystemItem.bookmarks, tag: 2)
+        
+        self.viewControllers = [uiVC,baseVC]
     }
 
     override func didReceiveMemoryWarning() {
