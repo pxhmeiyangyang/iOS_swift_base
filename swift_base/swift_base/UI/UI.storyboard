@@ -274,6 +274,42 @@
             </objects>
             <point key="canvasLocation" x="1105" y="-463"/>
         </scene>
+        <!--Text View View Controller-->
+        <scene sceneID="NzM-R4-vXV">
+            <objects>
+                <viewController storyboardIdentifier="TextViewViewController" id="Lwq-Vl-Ak0" customClass="TextViewViewController" customModule="swift_base" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r7U-2c-jY9"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3g-Cc-Iny"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Ec-a8-SaE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="toN-m5-cVO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.7843137255" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="toN-m5-cVO" secondAttribute="trailing" id="eQT-9Z-xBs"/>
+                            <constraint firstItem="toN-m5-cVO" firstAttribute="leading" secondItem="4Ec-a8-SaE" secondAttribute="leading" id="ivI-Bh-Vrr"/>
+                            <constraint firstItem="M3g-Cc-Iny" firstAttribute="top" secondItem="toN-m5-cVO" secondAttribute="bottom" id="nCj-Rk-lMp"/>
+                            <constraint firstItem="toN-m5-cVO" firstAttribute="top" secondItem="r7U-2c-jY9" secondAttribute="bottom" id="o9s-F1-NTd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="toN-m5-cVO" id="0Kz-va-iFK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSO-9q-ZNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1769" y="-464"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="g24-4H-FYY">
             <objects>

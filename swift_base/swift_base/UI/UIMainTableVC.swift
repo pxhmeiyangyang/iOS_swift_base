@@ -10,7 +10,7 @@ import UIKit
 
 class UIMainTableVC: UITableViewController {
 
-    let dataList = ["Button","Label","TextField"]
+    let dataList = ["Button","Label","TextField","TextView"]
     
     let UISB = UIStoryboard.init(name: "UI", bundle: Bundle.main)
     
@@ -74,7 +74,11 @@ class UIMainTableVC: UITableViewController {
             buttonVC.hidesBottomBarWhenPushed = true
             buttonVC.navigationItem.title = dataList[indexPath.row]
             self.navigationController?.pushViewController(buttonVC, animated: true)
-            
+        case 3:
+            let buttonVC = UISB.instantiateViewController(withIdentifier: "TextViewViewController")
+            buttonVC.hidesBottomBarWhenPushed = true
+            buttonVC.navigationItem.title = dataList[indexPath.row]
+            self.navigationController?.pushViewController(buttonVC, animated: true)
         default:
             break
         }
