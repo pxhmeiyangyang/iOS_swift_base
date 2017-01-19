@@ -10,6 +10,7 @@ import UIKit
 
 class BaseTableViewController: UITableViewController {
     let dataArray = ["BundleInfo"]
+    let baseTableStoryBoard = UIStoryboard.init(name: "Base", bundle: Bundle.main)
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +20,7 @@ class BaseTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.tableView.tableFooterView = UIView.init()
+        self.navigationItem.title = "base"
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +52,16 @@ class BaseTableViewController: UITableViewController {
     //MARK:- Tableview delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+        switch indexPath.row {
+        case 0:
+            let bundleInfoVC = baseTableStoryBoard.instantiateViewController(withIdentifier: "BundleInfoVC")
+            bundleInfoVC.hidesBottomBarWhenPushed = true
+            self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "返回", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+            bundleInfoVC.navigationItem.title = dataArray[indexPath.row]
+            self.navigationController?.pushViewController(bundleInfoVC, animated: true)
+        default:
+            break
+        }
     }
     
     /*

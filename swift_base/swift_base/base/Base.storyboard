@@ -38,6 +38,49 @@
             </objects>
             <point key="canvasLocation" x="-255" y="188"/>
         </scene>
+        <!--Bundle InfoVC-->
+        <scene sceneID="AhW-nX-JiS">
+            <objects>
+                <viewController storyboardIdentifier="BundleInfoVC" id="1y9-X6-rC1" customClass="BundleInfoVC" customModule="swift_base" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ogI-uc-jdb"/>
+                        <viewControllerLayoutGuide type="bottom" id="zik-kL-zVu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AJc-y7-FrG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OE4-Mo-oe6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="2YX-R6-pUG">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2YX-R6-pUG" id="Mgi-0C-FDT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OE4-Mo-oe6" secondAttribute="trailing" id="8ph-eb-ph9"/>
+                            <constraint firstItem="OE4-Mo-oe6" firstAttribute="top" secondItem="ogI-uc-jdb" secondAttribute="bottom" id="Mjo-SJ-3vV"/>
+                            <constraint firstItem="zik-kL-zVu" firstAttribute="top" secondItem="OE4-Mo-oe6" secondAttribute="bottom" id="lWI-8J-UIh"/>
+                            <constraint firstItem="OE4-Mo-oe6" firstAttribute="leading" secondItem="AJc-y7-FrG" secondAttribute="leading" id="lo8-5M-bXn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="OE4-Mo-oe6" id="Yla-7Z-f5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0G-kv-WJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="188"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="qSJ-Gl-74P">
             <objects>

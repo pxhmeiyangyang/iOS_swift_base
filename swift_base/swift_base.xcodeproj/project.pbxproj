@@ -22,6 +22,7 @@
 		F123D00B1E2508F8009315B3 /* TxtFeildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123D00A1E2508F8009315B3 /* TxtFeildViewController.swift */; };
 		F1248AC51E278DED00CD137E /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1248AC41E278DED00CD137E /* Base.storyboard */; };
 		F1248AC91E278E3700CD137E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1248AC81E278E3700CD137E /* BaseTableViewController.swift */; };
+		F1248ACB1E27954300CD137E /* BundleInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1248ACA1E27954300CD137E /* BundleInfoVC.swift */; };
 		F1A6BDEB1E25E30000365771 /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6BDEA1E25E30000365771 /* TextViewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		F123D00A1E2508F8009315B3 /* TxtFeildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TxtFeildViewController.swift; sourceTree = "<group>"; };
 		F1248AC41E278DED00CD137E /* Base.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
 		F1248AC81E278E3700CD137E /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		F1248ACA1E27954300CD137E /* BundleInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleInfoVC.swift; sourceTree = "<group>"; };
 		F1A6BDEA1E25E30000365771 /* TextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				F1248AC41E278DED00CD137E /* Base.storyboard */,
+				F1248ACA1E27954300CD137E /* BundleInfoVC.swift */,
 				F1248AC81E278E3700CD137E /* BaseTableViewController.swift */,
 			);
 			path = base;
@@ -306,6 +309,7 @@
 			files = (
 				F1248AC91E278E3700CD137E /* BaseTableViewController.swift in Sources */,
 				F123CFF81E249069009315B3 /* MainTabBar.swift in Sources */,
+				F1248ACB1E27954300CD137E /* BundleInfoVC.swift in Sources */,
 				F123D0031E24929D009315B3 /* UIMainTableVC.swift in Sources */,
 				F123CFCA1E248D1B009315B3 /* AppDelegate.swift in Sources */,
 				F123D0051E24E78F009315B3 /* ButtonViewController.swift in Sources */,
